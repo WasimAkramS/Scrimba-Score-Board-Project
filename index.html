@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Score Board</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="board-script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="board-container">
+        <div class="flex-container">
+            <div class="column1">
+                <h2>HOME</h2>
+                <P id="home-score">0</P>
+                <button class="btn" onclick="plusOneH()">+1</button>
+                <button class="btn" onclick="plusTwoH()">+2</button>
+                <button class="btn" onclick="plusThreeH()">+3</button>
+            </div>
+
+            <div class="column1">
+                <h2>GUEST</h2>
+                <P id="guest-score">0</P>
+                <button class="btn" onclick="plusOneG()">+1</button>
+                <button class="btn" onclick="plusTwoG()">+2</button>
+                <button class="btn" onclick="plusThreeG()">+3</button>
+            </div>
+        </div>
+
+        <button class="ng-button" onclick="startOver()">New Game</button>
+        </div>
+    </body>
+</html>
